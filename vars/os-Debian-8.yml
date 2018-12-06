@@ -4,3 +4,4 @@ dovecot_repo_supported: true
 dovecot_repo_key: https://repo.dovecot.org/DOVECOT-REPO-GPG
 dovecot_repo_dep:
   - apt-transport-https
+  - gnupg
