@@ -1,0 +1,3 @@
+{{ ansible_managed | comment }}
+
+deb https://repo.dovecot.org/ce-{{ dovecot_repo_version }}/{{ ansible_distribution|lower}}/{{ ansible_distribution_release|lower}} {{ansible_distribution_release|lower}} main

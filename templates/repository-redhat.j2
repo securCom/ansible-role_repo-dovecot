@@ -1,0 +1,8 @@
+{{ ansible_managed | comment }}
+
+[dovecot-{{ dovecot_repo_version }}]
+name=Dovecot {{ dovecot_repo_version }} CentOS $releasever - $basearch
+baseurl=http://repo.dovecot.org/ce-{{ dovecot_repo_version }}/centos/$releasever/RPMS/$basearch
+gpgkey={{ dovecot_repo_key }}
+gpgcheck=1
+enabled=1

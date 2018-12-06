@@ -1,0 +1,31 @@
+---
+- name: "importing dovecot gpg key"
+  apt_key:
+    state: present
+    keyring: /etc/apt/trusted.gpg.d/dovecot.gpg
+    url: "{{ dovecot_repo_key }}"
+  when: dovecot_repo_state
+
+- name: "installing dovecot required packages"
+  apt:
+    name: "{{ package }}"
+    state: present
+  loop: "{{ dovecot_repo_dep }}"
+  loop_control:
+    loop_var: package
+  when: dovecot_repo_state
+
+- name: "add dovecot repository"
+  template:
+    src: "repository-debian.j2"
+    dest: /etc/apt/sources.list.d/dovecot.list
+    owner: root
+    group: root
+    mode: 0644
+  when: dovecot_repo_state
+
+- name: "remove dovecot repository"
+  file:
+    path: /etc/apt/sources.list.d/dovecot.list
+    state: absent
+  when: not dovecot_repo_state
