@@ -24,7 +24,7 @@ There no external dependencies.
 
 To install role, add following line to **ansible-galaxy** requirements file
 ```
-- src: https://github.com/securCom/ansilbe-role_repo-dovecot
+- src: https://github.com/securCom/ansible-role_repo-dovecot
   version: master
   name: securcom.repo_dovecot
 ```
