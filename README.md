@@ -1,6 +1,6 @@
 # Repo: Dovecot
 
-Manage Dovecot community repositories to the supported systems.
+Manage Dovecot community repositories.
 
 # Requirements
 
@@ -21,6 +21,13 @@ Feel free to add any new linux distribution and version if missing.
 There no external dependencies.
 
 # Example Playbook
+
+To install role, add following line to **ansible-galaxy** requirements file
+```
+- src: https://github.com/securCom/ansilbe-role_repo-dovecot
+  version: master
+  name: securcom.repo_dovecot
+```
 
 ```
 - hosts: servers
