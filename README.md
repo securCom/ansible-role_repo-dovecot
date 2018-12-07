@@ -1,5 +1,5 @@
 [![Build Status](https://www.travis-ci.org/securCom/ansible-role_repo-dovecot.svg?branch=master)](https://www.travis-ci.org/securCom/ansible-role_repo-dovecot)
-
+[![GitHub release](https://img.shields.io/github/release/securCom/ansible-role_repo-dovecot.svg)](https://github.com/securCom/ansible-role_repo-dovecot)
 
 # Repo: Dovecot
 
