@@ -1,8 +1,6 @@
 ---
 sudo: required
-
 language: python
-
 services:
   - docker
 
@@ -15,6 +13,8 @@ install:
   - pip install molecule
 
 script:
+  - molecule --version
+  - ansible --version
   - molecule test --scenario-name github
 
 notifications:

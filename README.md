@@ -1,3 +1,6 @@
+[![Build Status](https://www.travis-ci.org/securCom/ansible-role_repo-dovecot.svg?branch=master)](https://www.travis-ci.org/securCom/ansible-role_repo-dovecot)
+
+
 # Repo: Dovecot
 
 Manage Dovecot community repositories.
